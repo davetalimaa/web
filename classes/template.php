@@ -42,7 +42,12 @@ class template
             // loeme failist malli sisu
             $this->readFile($f);
         }
-        
+        //lisame .html laienduse kasutusele
+        $f =TMP_DIR.$this->file.'.html';
+        if(file_exists($f) and is_file($f) and is_readable($f)) {
+            // loeme failist malli sisu
+            $this->readFile($f);
+        }
         // kui susu ei ole võimalik lugeda
         if ($this->content === false){
             echo 'Ei suutnud lugeda faili'.$this->file.'<br />';
@@ -53,4 +58,10 @@ class template
     function readFile($f){
         $this->content = file_get_contents($f);
     }// readFile
+
+    //koostame paarid malli_element => reaalne_väärtus
+    function set($name, $val){
+        $this->vars[$name] = $val;
+    }//set
+
 }// klassi lõpp
