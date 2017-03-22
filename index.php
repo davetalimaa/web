@@ -9,4 +9,5 @@
 require_once 'conf.php';
 // pealehe sisu
 echo '<h1>Veebiprogrammeerimine esileht</h1>'
+
 ?>
