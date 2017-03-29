@@ -12,12 +12,11 @@ define('TMP_DIR', 'tmp/'); //tmpl kataloogi nime konstant
 //võtame kasutusle vajalikud failid
 require_once CLASSES_DIR.'template.php';
 require_once CLASSES_DIR.'http.php';
+require_once CLASSES_DIR.'linkobject.php';
 
 // loome vajalikud objektid projekti tööks
-$http = new http();
-$http->init();
+$http = new linkobject();
+
 // testime http objekti tööd
-echo '<pre>';
-print_r($http);
-echo '</pre>';
+echo REMOTE_ADDR;
 ?>
