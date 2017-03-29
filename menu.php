@@ -9,7 +9,7 @@
 $menu = new template('menu.menu');
 $item = new template('menu.item');
 // lisame sisu
-// nimetame menüü väljastav element
+// nimetame menüü väljastav elementgr
 $item->set('name','esimene');
 //loome antud menüü elemendile lingi
 $link = $http->getLink(array('act'=>'first'));
