@@ -20,4 +20,6 @@ $main_tmp-> set('content', 'Lehe sisu');
 $main_tmp-> set('site_title', 'Veebiarendus');
 //kontrollime antud objekti sisu
 echo $main_tmp->parse();
+// kutsume menüü tööle testimiseks
+require_once 'menu.php';
 ?>
