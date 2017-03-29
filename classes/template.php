@@ -79,7 +79,7 @@ class template
         } else {
             $this->vars[$name] = $this->vars[$name].$val;
         }
-    } //add
+    } //add.
 
     //html malli täitmine reaalse sisuga
     function parse(){
