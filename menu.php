@@ -12,10 +12,8 @@ $item = new template('menu.item');
 $item->set('name','esimene');
 $menu->set('items', $item->parse());
 $item->set('name','teine');
-$menu->set('items', $item->parse());
+$menu->add('items', $item->parse());
 // konrollime objekti oemasolu ja sisu
-echo '<pre>';
-print_r($menu);
-print_r($item);
-echo '<pre>';
+// kui soovime pidevat asedamist, siis set funktsioon add asemel
+$main_tmp-> add('menu', $menu->parse());
 ?>

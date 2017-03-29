@@ -16,10 +16,11 @@ $main_tmp-> set('user', 'Kasutajanimi');
 $main_tmp-> set('title', 'Pealeht');
 $main_tmp-> set('lang_bar', 'Keeleriba');
 $main_tmp-> set('menu', 'Lehe peamenüü');
+// kutsume menüü tööle testimiseks
+require_once 'menu.php';
 $main_tmp-> set('content', 'Lehe sisu');
 $main_tmp-> set('site_title', 'Veebiarendus');
 //kontrollime antud objekti sisu
 echo $main_tmp->parse();
-// kutsume menüü tööle testimiseks
-require_once 'menu.php';
+
 ?>
