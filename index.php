@@ -11,7 +11,7 @@ require_once 'conf.php';
 echo '<h1>Veebiprogrammeerimine esileht</h1>';
 //valmistame peatemplate objekti
 $main_tmp = new template('main');
-// valmistame paarid malli_elemant => väärtus
+// valmistame paarid malli_element => väärtus
 $main_tmp-> set('user', 'Kasutajanimi');
 $main_tmp-> set('title', 'Pealeht');
 $main_tmp-> set('lang_bar', 'Keeleriba');
