@@ -23,10 +23,6 @@ require_once CLASSES_DIR.'linkobject.php';
 $http = new linkobject();
 
 // testime linkobjekti tööd
-echo $http->baseUrl;
-echo '<br/>';
-$link = '';
-$http->addToLink($link, 'kasutaja', 'admin');
-echo '<br/>';
-$http->addToLink($link, 'pass', 'qwerty');
+echo $http->baseUrl.'<br />';
+echo $http->getLink(array('kasutaja'=>'admin', 'pass'=>'qwerty'));
 ?>
