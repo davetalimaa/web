@@ -9,6 +9,9 @@
 define('CLASSES_DIR', 'classes/'); // classes kataloogi nime konstant
 define('TMP_DIR', 'tmp/'); //tmpl kataloogi nime konstant
 define('LIB_DIR', 'lib/'); //lib kataloogi nimi konstatnt
+define('ACTS_DIR', 'acts/'); // acts kataloogi nime konstant
+
+define('DEFAULT_ACT', 'default'); // vaikimis tegevuse faili nime konstant
 
 // võtame kasutusele vajalikud abifailid
 require_once LIB_DIR.'utils.php';
